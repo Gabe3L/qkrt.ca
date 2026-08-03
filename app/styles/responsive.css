@@ -1,0 +1,381 @@
+@media (max-width: 1050px) {
+  .site-nav {
+    gap: 20px;
+    font-size: 12px;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .discovery-grid {
+    gap: 26px;
+  }
+}
+
+@media (max-width: 820px) {
+  :root {
+    --site-gutter: 24px;
+    --section-space: 54px;
+  }
+
+  .section-pad {
+    padding-block: var(--section-space);
+  }
+
+  .contact-page {
+    padding-top: 86px;
+  }
+
+  .site-header__inner {
+    height: 86px;
+  }
+
+  .site-header__brand {
+    width: 56px;
+    height: 66px;
+  }
+
+  .site-header__brand img {
+    width: 56px;
+    height: 56px;
+  }
+
+  .site-header__toggle {
+    display: block;
+  }
+
+  .site-nav {
+    position: absolute;
+    top: 86px;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 18px var(--site-gutter) 28px;
+    background: var(--ink-deep);
+    border-top: 1px solid var(--border);
+    box-shadow: 0 18px 34px rgb(0 0 0 / 50%);
+    font-size: 14px;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(-12px);
+    transform-origin: top;
+    clip-path: inset(0 0 100% 0);
+    transition:
+      clip-path 280ms ease,
+      opacity 200ms ease,
+      transform 280ms ease,
+      visibility 0s linear 280ms;
+  }
+
+  .site-nav--open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0);
+    clip-path: inset(0);
+    transition-delay: 0s;
+  }
+
+  .site-nav > a,
+  .site-nav__dropdown-trigger > a {
+    display: block;
+    width: 100%;
+    padding: 15px 12px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .site-nav__dropdown-trigger {
+    width: 100%;
+  }
+
+  .site-nav__dropdown-trigger button {
+    flex: 0 0 44px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .site-nav__dropdown-menu {
+    position: static;
+    display: none;
+    min-width: 0;
+    padding: 0 0 0 16px;
+    opacity: 1;
+    pointer-events: auto;
+    transform: none;
+    border-top: 0;
+    box-shadow: none;
+    background: var(--black);
+  }
+
+  .site-nav__dropdown--open .site-nav__dropdown-menu {
+    display: block;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .site-nav {
+      transition: none;
+    }
+  }
+
+  .home-hero {
+    height: 100vh;
+    height: 100dvh;
+    overflow: hidden;
+  }
+
+  .home-hero__image {
+    height: 100%;
+    object-position: center 60%;
+  }
+
+  .home-hero::after {
+    bottom: 0;
+    height: auto;
+  }
+
+  .home-hero__overlay {
+    position: absolute;
+    min-height: 0;
+    justify-content: center;
+    padding: 28px var(--site-gutter);
+    background: none;
+    text-shadow: 0 3px 18px rgb(0 0 0 / 70%);
+  }
+
+  .home-hero__overlay h1 {
+    max-width: 350px;
+    margin-bottom: 42px;
+    font-size: clamp(42px, 12vw, 58px);
+    line-height: 0.97;
+  }
+
+  .home-hero__overlay p {
+    max-width: 350px;
+    font-size: 23px;
+    line-height: 1.35;
+  }
+
+  .mission-section__inner,
+  .achievement-section__inner,
+  .sponsor-intro__copy,
+  .sponsor-contact__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mission-section__copy {
+    padding: 0 6px;
+  }
+
+  .mission-section__copy h2 {
+    font-size: clamp(32px, 9vw, 42px);
+  }
+
+  .mission-section__inner > img {
+    margin-top: 6px;
+    height: auto;
+    max-height: 480px;
+  }
+
+  .achievement-section {
+    padding-block: 62px;
+  }
+
+  .achievement-section__summary,
+  .achievement-section__headline {
+    min-height: 0;
+  }
+
+  .discovery-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .discovery-card,
+  .discovery-card img {
+    min-height: 0;
+    height: 320px;
+  }
+
+  .home-sponsors__grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .home-sponsors__grid img {
+    height: 90px;
+  }
+
+  .site-footer__inner {
+    align-items: flex-start;
+  }
+
+  .outreach-pillars,
+  .outreach-project__grid,
+  .outreach-project--reverse .outreach-project__grid,
+  .robot-feature__inner {
+    grid-template-columns: 1fr;
+  }
+
+  .outreach-pillars {
+    gap: 36px;
+    padding-inline: 0;
+  }
+
+  .outreach-project--reverse .outreach-project__robot-pair {
+    order: 2;
+  }
+
+  .outreach-project__grid {
+    gap: 34px;
+  }
+
+  .subteam-list {
+    grid-template-columns: 1fr;
+  }
+
+  .team-gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .robot-feature__inner {
+    gap: 34px;
+  }
+
+  .robot-feature--reverse .robot-feature__copy,
+  .robot-feature--reverse .robot-feature__images {
+    order: initial;
+  }
+
+  .sponsor-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .sponsor-contact__grid {
+    gap: 44px;
+  }
+}
+
+@media (max-width: 560px) {
+  :root {
+    --site-gutter: 20px;
+    --section-space: 52px;
+  }
+
+  .mission-section {
+    padding-block: 56px 64px;
+  }
+
+  .discovery-section {
+    padding-block: 64px 72px;
+  }
+
+  .discovery-section h2 {
+    margin-bottom: 28px;
+  }
+
+  .site-footer__inner,
+  .site-footer__identity {
+    flex-direction: column;
+  }
+
+  .site-footer__identity {
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .site-footer__socials {
+    align-self: flex-start;
+  }
+
+  .achievement-section__summary,
+  .achievement-section__headline {
+    padding: 30px 26px;
+  }
+
+  .achievement-section__headline strong {
+    font-size: 34px;
+  }
+
+  .vision-grid,
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .vision-card {
+    min-height: 0;
+    padding: 30px 26px;
+  }
+
+  .values-section h2 {
+    font-size: 40px;
+  }
+
+  .outreach-pillars h2 {
+    font-size: 24px;
+  }
+
+  .team-title {
+    padding-inline: 0;
+  }
+
+  .team-title .site-container {
+    padding: 40px 22px 28px;
+  }
+
+  .team-details__panel {
+    padding: 28px 24px;
+  }
+
+  .team-gallery {
+    gap: 8px;
+  }
+
+  .robot-feature {
+    padding-block: 58px;
+  }
+
+  .robot-feature__copy h2 {
+    font-size: 48px;
+  }
+
+  .robot-feature__images {
+    gap: 8px;
+  }
+
+  .sponsor-hero {
+    height: 180px;
+  }
+
+  .sponsor-intro__lead p {
+    max-width: 100%;
+  }
+
+  .sponsor-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .sponsor-grid a {
+    height: 130px;
+    padding: 20px;
+  }
+
+  .sponsor-contact__email {
+    padding: 26px 22px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.001ms !important;
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}

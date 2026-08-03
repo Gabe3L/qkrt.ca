@@ -1,0 +1,13 @@
+@import "tailwindcss";
+@import "./styles/base.css";
+@import "./styles/components/header.css";
+@import "./styles/components/footer.css";
+@import "./styles/components/page-hero.css";
+@import "./styles/pages/home.css";
+@import "./styles/pages/about.css";
+@import "./styles/pages/outreach.css";
+@import "./styles/pages/team.css";
+@import "./styles/pages/robots.css";
+@import "./styles/pages/contact.css";
+@import "./styles/pages/sponsorship.css";
+@import "./styles/responsive.css";
