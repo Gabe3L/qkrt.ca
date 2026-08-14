@@ -122,10 +122,10 @@ export default function SponsorshipPage() {
           </div>
           <a
             className="sponsor-contact__email"
-            href="mailto:qkrt@engsoc.queensu.ca?subject=Sponsorship%20and%20partnership%20inquiry"
+            href="mailto:sponsorship@qkrt.ca?subject=Sponsorship%20and%20partnership%20inquiry"
           >
             <span>Partnership inquiries</span>
-            <strong>qkrt@engsoc.queensu.ca</strong>
+            <strong>sponsorship@qkrt.ca</strong>
             <b>Start a conversation →</b>
           </a>
         </div>

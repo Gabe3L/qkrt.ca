@@ -26,10 +26,10 @@ export default function ContactPage() {
 
           <a
             className="contact-email-card"
-            href="mailto:qkrt@engsoc.queensu.ca"
+            href="mailto:contact@qkrt.ca"
           >
             <span className="contact-email-card__label">Email QKRT</span>
-            <strong>qkrt@engsoc.queensu.ca</strong>
+            <strong>contact@qkrt.ca</strong>
             <span className="contact-email-card__action">
               Open your email app <b aria-hidden="true">↗</b>
             </span>

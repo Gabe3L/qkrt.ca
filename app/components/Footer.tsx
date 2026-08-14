@@ -45,7 +45,7 @@ export function Footer() {
             </svg>
           </a>
           <a
-            href="mailto:qkrt@engsoc.queensu.ca"
+            href="mailto:contact@qkrt.ca"
             aria-label="Email QKRT"
           >
             <svg viewBox="0 0 24 24" aria-hidden="true">
