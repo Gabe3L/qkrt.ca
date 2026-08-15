@@ -56,7 +56,7 @@ export default function RobotsPage() {
     <main className="standard-page robots-page">
       <PageHero
         eyebrow="Engineered for RoboMaster"
-        title="Advanced Robots"
+        title="Robots"
         description="Mechanical design, embedded control, and intelligent autonomy come together in a fleet built for a fast-moving arena."
         image={robots2}
         imageAlt="QKRT robots in the lab"

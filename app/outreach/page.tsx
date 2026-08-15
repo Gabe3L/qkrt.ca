@@ -14,7 +14,7 @@ export default function OutreachPage() {
     <main className="standard-page outreach-page">
       <PageHero
         eyebrow="Robotics beyond the arena"
-        title="Community Outreach"
+        title="Outreach"
         description="We nurture an early interest in science, technology, engineering, and mathematics through welcoming, hands-on robotics experiences."
         image={team1}
         imageAlt="QKRT members at a robotics outreach event"

@@ -39,7 +39,7 @@ export default function SponsorshipPage() {
     <main className="standard-page sponsorship-page">
       <PageHero
         eyebrow="Build the future with us"
-        title="Our Sponsors"
+        title="Sponsors"
         description="Our partners give student engineers the tools, materials, and opportunities to turn ambitious ideas into competition-ready robots."
         image={competition1}
         imageAlt="QKRT members supporting their robots at RoboMaster"
