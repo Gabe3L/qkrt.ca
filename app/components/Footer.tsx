@@ -73,6 +73,7 @@ export function Footer() {
       <p className="site-footer__copyright">
         Copyright © 2026 Queen&apos;s Knights Robotics Team
       </p>
+      <p className="site-footer__credit">Website by Gabe Lynch</p>
     </footer>
   );
 }

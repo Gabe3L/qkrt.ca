@@ -73,3 +73,10 @@
   font-size: 12px;
   text-align: center;
 }
+
+.site-footer__credit {
+  margin: 8px 0 0;
+  color: var(--silver-dim);
+  font-size: 11px;
+  text-align: center;
+}
