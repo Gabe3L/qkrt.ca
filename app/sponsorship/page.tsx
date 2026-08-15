@@ -1,17 +1,9 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import competition1 from "@/app/assets/competition/competition1.webp";
-import agile from "@/app/assets/sponsors/agile.webp";
-import att from "@/app/assets/sponsors/att.webp";
-import cvs from "@/app/assets/sponsors/cvs.webp";
-import exxon from "@/app/assets/sponsors/exxon.webp";
 import isowater from "@/app/assets/sponsors/isowater.webp";
-import kenesto from "@/app/assets/sponsors/kenesto.webp";
 import mgChemicals from "@/app/assets/sponsors/mg_chemicals.webp";
-import oracle from "@/app/assets/sponsors/oracle.webp";
 import queensEngineering from "@/app/assets/sponsors/queens.webp";
-import redbull from "@/app/assets/sponsors/red_bull.webp";
-import solidworks from "@/app/assets/sponsors/solidworks.webp";
 import studica from "@/app/assets/sponsors/studica.webp";
 import { PageHero } from "../components/PageHero";
 
@@ -20,38 +12,26 @@ export const metadata: Metadata = {
 };
 
 const sponsors = [
-  { name: "AT&T", href: "https://www.att.jobs/", image: att },
-  {
-    name: "SolidWorks",
-    href: "https://www.solidworks.com/",
-    image: solidworks,
-  },
-  { name: "Red Bull", href: "https://www.redbull.com/ca-en", image: redbull },
-  { name: "Oracle", href: "https://www.oracle.com/", image: oracle },
-  { name: "CVS Health", href: "https://www.cvshealth.com/", image: cvs },
-  {
-    name: "ExxonMobil",
-    href: "https://corporate.exxonmobil.com/",
-    image: exxon,
-  },
-  {
-    name: "Agile Manufacturing",
-    href: "https://agile-manufacturing.com/",
-    image: agile,
-  },
-  { name: "Kenesto", href: "https://www.kenesto.com/", image: kenesto },
   {
     name: "MG Chemicals",
     href: "https://mgchemicals.com/",
     image: mgChemicals,
   },
-  { name: "Studica", href: "https://www.studica.co/", image: studica },
   {
-    name: "Queen's Smith Engineering",
+    name: "Isowater Corp.",
+    href: "https://www.isowater.com/",
+    image: isowater,
+  },
+  {
+    name: "Smith Engineering",
     href: "https://www.queensu.ca/",
     image: queensEngineering,
   },
-  { name: "Isowater", href: "https://www.isowater.com/", image: isowater },
+  {
+    name: "Studica Robotics",
+    href: "https://www.studica.co/",
+    image: studica,
+  },
 ];
 
 export default function SponsorshipPage() {
