@@ -17,17 +17,17 @@ const effectiveDate = "August 26, 2026";
 export function LegalPage({ title, description, sections }: LegalPageProps) {
   return (
     <main className="bg-qk-base pt-25 max-[820px]:pt-21.5">
-      <header className="relative isolate overflow-hidden border-b border-qk-border bg-qk-surface">
+      <header className="relative isolate">
         <div
-          className="absolute inset-0 -z-10 bg-[linear-gradient(90deg,rgb(237_28_36/7%)_1px,transparent_1px),linear-gradient(rgb(237_28_36/7%)_1px,transparent_1px),radial-gradient(circle_at_85%_20%,rgb(237_28_36/18%),transparent_30%)] bg-size-[64px_64px,64px_64px,auto]"
+          className="absolute inset-x-0 top-0 -bottom-20 -z-10 bg-[linear-gradient(90deg,rgb(237_28_36/7%)_1px,transparent_1px),linear-gradient(rgb(237_28_36/7%)_1px,transparent_1px),radial-gradient(circle_at_85%_20%,rgb(237_28_36/18%),transparent_30%)] bg-size-[64px_64px,64px_64px,auto] [mask-image:linear-gradient(to_bottom,black_0%,black_68%,transparent_100%)]"
           aria-hidden="true"
         />
-        <div className={`${siteContainer} py-[clamp(72px,10vw,124px)]`}>
-          <p className="mb-5 flex items-center gap-3 font-brand text-xs tracking-[.16em] text-qk-red uppercase before:h-0.75 before:w-8 before:bg-qk-red before:content-['']">
+        <div className={`${siteContainer} py-[clamp(52px,7vw,84px)]`}>
+          <p className="mb-4 flex items-center gap-3 font-brand text-xs tracking-[.16em] text-qk-red uppercase before:h-0.75 before:w-8 before:bg-qk-red before:content-['']">
             Legal
           </p>
           <h1
-            className={`${heading} max-w-225 text-[clamp(44px,7vw,82px)] tracking-[-.02em] text-balance`}
+            className={`${heading} max-w-225 text-[clamp(38px,5.5vw,64px)] tracking-[-.02em] text-balance`}
           >
             {title}
           </h1>
@@ -56,7 +56,7 @@ export function LegalPage({ title, description, sections }: LegalPageProps) {
                   <span className="font-brand text-[10px] tracking-[.12em] text-qk-red" aria-hidden="true">
                     {String(index + 1).padStart(2, "0")}
                   </span>
-                  <h2 className="font-brand text-[clamp(17px,2vw,21px)] leading-[1.25] tracking-[.02em] uppercase">
+                  <h2 className="font-brand text-[clamp(17px,2vw,21px)] leading-tight tracking-[.02em] uppercase">
                     {section.title}
                   </h2>
                 </div>
