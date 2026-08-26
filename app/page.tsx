@@ -51,7 +51,7 @@ export default function Home() {
       <section className="mission-section section-pad">
         <div className="mission-section__inner">
           <div className="mission-section__copy">
-            <h2>Our Misson</h2>
+            <h2>Our Mission</h2>
             <p>
               Empowering students to develop in-demand robotics skills by
               fostering excellence in the design, fabrication, and programming
