@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 const robots = [
   {
     name: "Sentry",
-    lead: "The Sentry is the only fully autonomous robot on the battlefield.",
+    lead: "The Sentry is a fully autonomous robot deployed to the battlefield.",
     points: [
       "Equipped with a machine learning-based computer vision algorithm.",
       "Uses onboard camera images to precisely aim and fire at enemy robots.",
@@ -30,7 +30,7 @@ const robots = [
   },
   {
     name: "Hero",
-    lead: "The Hero is the mightiest ground robot in the game.",
+    lead: "The Hero is the mightiest robot in the game and shoots projectiles double the size.",
     points: [
       "Fires golf balls dealing tenfold damage compared to plastic pellets.",
       "Though costly and slow, it excels in attacking enemy outposts.",

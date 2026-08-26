@@ -52,15 +52,17 @@ export default function SponsorshipPage() {
           </div>
           <div>
             <p>
-              The team receives generous aid from its sponsors, creating a space
-              that encourages creativity with reduced financial stress with
-              consideration to competition, equipment, and design programs.
+              Our team brings together students to develop competition-ready robotic 
+              systems from the ground up. Sponsorship directly expands what our students 
+              are able to design, manufacture, test and learn.
             </p>
             <br />
             <p>
-              Every contribution is greatly appreciated. The team actively works
-              toward producing at the level that represents the encouragement
-              its sponsors have shown.
+              RoboMaster attracts students who voluntarily spend hundreds of hours 
+              each year applying engineering, programming, manufacturing, leadership, 
+              and project-management skills beyond the classroom. Sponsorship gives 
+              organizations an opportunity to build relationships with these students 
+              before they enter the workforce.
             </p>
           </div>
         </div>
@@ -96,8 +98,9 @@ export default function SponsorshipPage() {
           <div>
             <h2>Become a Partner?</h2>
             <p>
-              Queen&apos;s Knights Robotics Team values each and every sponsor
-              immensely. Every contribution is greatly appreciated.
+              Queen&apos;s Knights Robotics deeply values each and every 
+              sponsor. Every contribution plays an important role in aiding
+              the growth of our team.
             </p>
           </div>
           <a
