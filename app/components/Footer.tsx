@@ -83,7 +83,7 @@ export function Footer() {
           </div>
           <div className="flex flex-wrap justify-end gap-x-5 gap-y-1.5 text-xs text-qk-muted max-[560px]:justify-start">
             <Link className={footerLinkClass} href="/privacy">Privacy Policy</Link>
-            <Link className={footerLinkClass} href="/terms">Terms &amp; Conditions</Link>
+            <Link className={footerLinkClass} href="/terms">Terms of Service</Link>
           </div>
         </nav>
       </div>
