@@ -10,13 +10,13 @@ export const metadata: Metadata = {
     template: "%s | Queen's Knights",
   },
   description:
-    "Queen's Knights Robotics Team empowers students to design, fabricate, and program advanced RoboMaster robots.",
+    "Queen's Knights Robotics empowers students to design, fabricate, and program advanced RoboMaster robots.",
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
   },
   openGraph: {
-    title: "Queen's Knights Robotics Team",
+    title: "Queen's Knights Robotics",
     description: "Fostering excellence in robotics since 2018.",
     type: "website",
     images: [
@@ -24,13 +24,13 @@ export const metadata: Metadata = {
         url: "/social.webp",
         width: 1792,
         height: 896,
-        alt: "Queen's Knights Robotics Team robot",
+        alt: "Queen's Knights Robotics robot",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Queen's Knights Robotics Team",
+    title: "Queen's Knights Robotics",
     description: "Fostering excellence in robotics since 2018.",
     images: ["/social.webp"],
   },
@@ -42,8 +42,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body>
+    <html className="scroll-smooth bg-qk-base motion-reduce:scroll-auto" lang="en">
+      <body className="min-w-80 overflow-x-clip bg-qk-base font-body text-base leading-[1.65] text-white [text-rendering:optimizeLegibility] selection:bg-qk-red selection:text-white">
         <Header />
         {children}
         <Footer />

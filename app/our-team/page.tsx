@@ -3,6 +3,7 @@ import Image from "next/image";
 import team2 from "@/app/assets/team/team2.webp";
 import teamStructure from "@/app/assets/team/team_structure.webp";
 import { PageHero } from "../components/PageHero";
+import { heading, sectionPadding, siteContainer } from "../tailwind";
 
 export const metadata: Metadata = {
   title: "Our Team",
@@ -74,43 +75,43 @@ const subteams = [
 
 export default function AboutPage() {
   return (
-    <main className="standard-page about-page">
+    <main className="bg-qk-base">
       <PageHero
         eyebrow="The people behind the machines"
         title="Our Team"
         description="A close-knit, interdisciplinary group of Queen's students building advanced robots and the skills to lead beyond the arena."
         image={team2}
-        imageAlt="Queen's Knights Robotics Team at competition"
+        imageAlt="Queen's Knights Robotics at competition"
         imagePosition="top"
       />
 
-      <section className="vision-section section-pad">
-        <div className="site-container">
-          <div className="vision-grid">
+      <section className={`${sectionPadding} bg-qk-base`}>
+        <div className={siteContainer}>
+          <div className="grid grid-cols-2 gap-5 max-[560px]:grid-cols-1">
             {visionItems.map((item) => (
-              <article className="vision-card" key={item.number}>
-                <span>{item.number}</span>
-                <h3>{item.title}</h3>
-                <p>{item.body}</p>
+              <article className="relative min-h-62.5 overflow-hidden border border-qk-border bg-qk-surface p-9.5 max-[560px]:min-h-0 max-[560px]:px-6.5 max-[560px]:py-7.5" key={item.number}>
+                <span className="absolute top-1.5 right-4.5 font-display text-[112px] leading-none text-qk-muted/10">{item.number}</span>
+                <h3 className={`${heading} relative mb-5 text-[26px] text-qk-red`}>{item.title}</h3>
+                <p className="relative mb-0 text-[17px] text-qk-muted">{item.body}</p>
               </article>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="team-details section-pad">
-        <div className="site-container">
-          <div className="team-details__panel">
-            <h2>Sub-Teams:</h2>
-            <p>The 2025–26 team structure consists of six sub-teams:</p>
-            <div className="subteam-list">
+      <section className={`${sectionPadding} bg-qk-base pt-0`}>
+        <div className={siteContainer}>
+          <div className="border border-qk-border bg-qk-surface p-9.5 max-[560px]:px-6 max-[560px]:py-7">
+            <h2 className={`${heading} mb-3.5 text-[clamp(34px,4vw,48px)]`}>Sub-Teams:</h2>
+            <p className="mb-6 text-[17px]">The 2025–26 team structure consists of six sub-teams:</p>
+            <div className="grid grid-cols-2 gap-x-11 gap-y-5.5 max-[820px]:grid-cols-1">
               {subteams.map((team) => (
-                <article key={team.name}>
-                  <h3>{team.name}</h3>
-                  <p>
+                <article className="border-l-2 border-qk-red pl-5" key={team.name}>
+                  <h3 className="mb-0.75 font-body text-lg leading-[1.1] normal-case">{team.name}</h3>
+                  <p className="mb-0 text-[15px] leading-[1.35]">
                     <strong>Focus:</strong> {team.focus}
                   </p>
-                  <p>{team.detail}</p>
+                  <p className="mb-0 text-[15px] leading-[1.35]">{team.detail}</p>
                 </article>
               ))}
             </div>
@@ -118,10 +119,10 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="team-gallery-section section-pad">
-        <div className="site-container">
+      <section className={`${sectionPadding} bg-qk-base`}>
+        <div className={siteContainer}>
           <Image
-            className="team-structure"
+            className="mt-11 w-full bg-white"
             src={teamStructure}
             alt="QKRT 2025–2026 team structure"
             sizes="(max-width: 1200px) 100vw, 1200px"
