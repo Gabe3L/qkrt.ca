@@ -25,7 +25,7 @@ export function PageHero({
   }[imagePosition];
 
   return (
-    <section className="relative isolate min-h-[clamp(540px,62vw,680px)] overflow-hidden bg-qk-base after:pointer-events-none after:absolute after:right-[clamp(20px,5vw,76px)] after:bottom-0 after:h-[30%] after:w-0.5 after:origin-bottom after:-skew-x-18 after:bg-linear-to-b after:from-transparent after:to-qk-red after:content-[''] max-[820px]:min-h-140 max-[560px]:min-h-130">
+    <section className="relative isolate mb-8 min-h-[clamp(540px,62vw,680px)] overflow-hidden bg-qk-base after:pointer-events-none after:absolute after:right-[clamp(20px,5vw,76px)] after:bottom-0 after:h-[30%] after:w-0.5 after:origin-bottom after:-skew-x-18 after:bg-linear-to-b after:from-transparent after:to-qk-red after:content-[''] max-[820px]:min-h-140 max-[560px]:mb-3 max-[560px]:min-h-130">
       <Image
         className={`absolute inset-0 z-[-3] h-full w-full object-cover saturate-[.88] contrast-[1.06] ${imagePositionClass}`}
         src={image}

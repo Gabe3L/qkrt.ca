@@ -37,7 +37,7 @@ export function Footer() {
             target="_blank"
             rel="noreferrer"
           >
-            Facebook
+            Facebook ↗
           </a>
           <a
             className={footerLinkClass}
@@ -45,7 +45,7 @@ export function Footer() {
             target="_blank"
             rel="noreferrer"
           >
-            Instagram
+            Instagram ↗
           </a>
           <a
             className={footerLinkClass}
@@ -53,7 +53,7 @@ export function Footer() {
             target="_blank"
             rel="noreferrer"
           >
-            LinkedIn
+            LinkedIn ↗
           </a>
           <a
             className={footerLinkClass}
@@ -61,7 +61,7 @@ export function Footer() {
             target="_blank"
             rel="noreferrer"
           >
-            GitHub
+            GitHub ↗
           </a>
         </div>
       </div>
