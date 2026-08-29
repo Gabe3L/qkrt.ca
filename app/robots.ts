@@ -8,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://qkrt.gabelynch.com/sitemap.xml",
+    sitemap: "https://www.qkrt.ca/sitemap.xml",
   };
 }

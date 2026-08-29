@@ -4,7 +4,7 @@ import { Header } from "./components/Header";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://qkrt.gabelynch.com"),
+  metadataBase: new URL("https://www.qkrt.ca"),
   title: {
     default: "Queen's Knights",
     template: "%s | Queen's Knights",
@@ -42,7 +42,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html className="scroll-smooth bg-qk-base motion-reduce:scroll-auto" lang="en">
+    <html
+      className="scroll-smooth bg-qk-base motion-reduce:scroll-auto"
+      lang="en"
+    >
       <body className="min-w-80 overflow-x-clip bg-qk-base font-body text-base leading-[1.65] text-white [text-rendering:optimizeLegibility] selection:bg-qk-red selection:text-white">
         <Header />
         {children}

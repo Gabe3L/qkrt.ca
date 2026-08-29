@@ -1,7 +1,7 @@
 # Queen's Knights Robotics Team
 
 The official website for the Queen's Knights Robotics Team, deployed at
-[qkrt.gabelynch.com](https://qkrt.gabelynch.com).
+[www.qkrt.ca](https://www.qkrt.ca).
 
 ## Prerequisites
 

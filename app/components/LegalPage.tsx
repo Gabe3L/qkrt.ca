@@ -19,7 +19,7 @@ export function LegalPage({ title, description, sections }: LegalPageProps) {
     <main className="bg-qk-base pt-25 max-[820px]:pt-21.5">
       <header className="relative isolate">
         <div
-          className="absolute inset-x-0 top-0 -bottom-20 -z-10 bg-[linear-gradient(90deg,rgb(237_28_36/7%)_1px,transparent_1px),linear-gradient(rgb(237_28_36/7%)_1px,transparent_1px),radial-gradient(circle_at_85%_20%,rgb(237_28_36/18%),transparent_30%)] bg-size-[64px_64px,64px_64px,auto] [mask-image:linear-gradient(to_bottom,black_0%,black_68%,transparent_100%)]"
+          className="absolute inset-x-0 top-0 -bottom-20 -z-10 bg-[linear-gradient(90deg,rgb(237_28_36/7%)_1px,transparent_1px),linear-gradient(rgb(237_28_36/7%)_1px,transparent_1px),radial-gradient(circle_at_85%_20%,rgb(237_28_36/18%),transparent_30%)] bg-size-[64px_64px,64px_64px,auto] mask-[linear-gradient(to_bottom,black_0%,black_68%,transparent_100%)]"
           aria-hidden="true"
         />
         <div className={`${siteContainer} py-[clamp(52px,7vw,84px)]`}>

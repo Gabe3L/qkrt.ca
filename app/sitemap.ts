@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 
 export const dynamic = "force-static";
 
-const siteUrl = "https://qkrt.gabelynch.com";
+const siteUrl = "https://www.qkrt.ca";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
