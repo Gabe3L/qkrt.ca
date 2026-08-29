@@ -12,6 +12,9 @@ import { focusRing, heading, sectionPadding, siteContainer } from "../tailwind";
 
 export const metadata: Metadata = {
   title: "Robots",
+  alternates: {
+    canonical: "/robots/",
+  },
 };
 
 const robots = [

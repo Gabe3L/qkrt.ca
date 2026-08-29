@@ -9,7 +9,7 @@ import { PageHero } from "../components/PageHero";
 import { focusRing, heading, sectionPadding, siteContainer } from "../tailwind";
 
 export const metadata: Metadata = {
-  title: "Sponsorship",
+  title: "Sponsors",
 };
 
 const sponsors = [

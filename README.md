@@ -1,6 +1,6 @@
-# Queen's Knights Robotics Team
+# Queen's Knights Robotics
 
-The official website for the Queen's Knights Robotics Team, deployed at
+The official website for Queen's Knights Robotics, deployed at
 [www.qkrt.ca](https://www.qkrt.ca).
 
 ## Prerequisites

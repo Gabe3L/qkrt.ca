@@ -9,7 +9,17 @@ import team2 from "@/app/assets/team/team2.webp";
 import { focusRing, heading, siteContainer } from "./tailwind";
 
 export const metadata: Metadata = {
-  title: "Home",
+  title: {
+    absolute: "Queen's Knights Robotics",
+  },
+};
+
+const websiteStructuredData = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Queen's Knights Robotics",
+  alternateName: ["QKRT", "qkrt.ca"],
+  url: "https://www.qkrt.ca/",
 };
 
 const discoveryCards = [
@@ -35,8 +45,13 @@ const discoveryCards = [
 
 export default function Home() {
   return (
-    <main className="bg-qk-base">
-      <section className="relative mx-auto h-dvh w-full overflow-hidden bg-qk-base before:pointer-events-none before:absolute before:inset-x-0 before:-bottom-px before:z-10 before:h-[clamp(60px,12vh,120px)] before:bg-[linear-gradient(180deg,transparent_0%,rgb(9_10_15/36%)_28%,#090a0f_100%)] before:backdrop-blur-[10px] before:mask-[linear-gradient(180deg,transparent_0%,black_55%)] before:content-[''] after:absolute after:inset-0 after:bg-[linear-gradient(180deg,rgb(9_10_15/14%)_0%,rgb(237_28_36/5%)_48%,rgb(9_10_15/68%)_100%)] after:content-['']">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteStructuredData) }}
+      />
+      <main className="bg-qk-base">
+        <section className="relative mx-auto h-dvh w-full overflow-hidden bg-qk-base before:pointer-events-none before:absolute before:inset-x-0 before:-bottom-px before:z-10 before:h-[clamp(60px,12vh,120px)] before:bg-[linear-gradient(180deg,transparent_0%,rgb(9_10_15/36%)_28%,#090a0f_100%)] before:backdrop-blur-[10px] before:mask-[linear-gradient(180deg,transparent_0%,black_55%)] before:content-[''] after:absolute after:inset-0 after:bg-[linear-gradient(180deg,rgb(9_10_15/14%)_0%,rgb(237_28_36/5%)_48%,rgb(9_10_15/68%)_100%)] after:content-['']">
         <Image
           className="h-full w-full object-cover object-[center_54%] brightness-75 saturate-[1.2] max-[820px]:object-[center_60%]"
           src={robots1}
@@ -127,7 +142,8 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </section>
-    </main>
+        </section>
+      </main>
+    </>
   );
 }

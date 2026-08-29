@@ -5,9 +5,10 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.qkrt.ca"),
+  applicationName: "Queen's Knights Robotics",
   title: {
-    default: "Queen's Knights",
-    template: "%s | Queen's Knights",
+    default: "Queen's Knights Robotics",
+    template: "%s | Queen's Knights Robotics",
   },
   description:
     "Queen's Knights Robotics empowers students to design, fabricate, and program advanced RoboMaster robots.",
@@ -18,6 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Queen's Knights Robotics",
     description: "Fostering excellence in robotics since 2018.",
+    siteName: "Queen's Knights Robotics",
     type: "website",
     images: [
       {
