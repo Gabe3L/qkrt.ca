@@ -107,7 +107,7 @@ export default function SponsorshipPage() {
         title="Sponsors"
         description="Our partners give student engineers the tools, materials, and opportunities to turn ambitious ideas into competition-ready robots."
         image={competition1}
-        imageAlt="QKRT members supporting their robots at RoboMaster"
+        imageAlt="QKRT members supporting their robots at ARCC 2026"
       />
 
       <section className={`${sectionPadding} bg-qk-base`}>
@@ -128,7 +128,7 @@ export default function SponsorshipPage() {
               what our students are able to design, manufacture, test and learn.
             </p>
             <p className="mb-4 text-[17px] leading-[1.7] text-qk-muted">
-              RoboMaster attracts students who voluntarily spend hundreds of
+              ARCC attracts students who voluntarily spend hundreds of
               hours each year applying engineering, programming, manufacturing,
               leadership, and project-management skills beyond the classroom.
               Sponsorship gives organizations an opportunity to build

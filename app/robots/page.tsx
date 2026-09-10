@@ -29,7 +29,7 @@ const robots = [
     images: [sentry2, sentry1],
     imageAlts: [
       "Sentry robot facing the camera",
-      "Sentry robot in the RoboMaster arena",
+      "Sentry robot in the ARCC arena",
     ],
   },
   {
@@ -59,7 +59,7 @@ export default function RobotsPage() {
   return (
     <main className="bg-qk-base">
       <PageHero
-        eyebrow="Engineered for RoboMaster"
+        eyebrow="Engineered for ARCC"
         title="Robots"
         description="Mechanical design, embedded control, and intelligent autonomy come together in a fleet built for a fast-moving arena."
         image={robots2}
@@ -83,7 +83,7 @@ export default function RobotsPage() {
             </h2>
             <p className="mb-0 max-w-180 text-[clamp(17px,1.8vw,20px)] leading-[1.65] text-qk-muted">
               In the North American{" "}
-              <em className="text-qk-red">RoboMaster Competition</em>,
+              <em className="text-qk-red">ARC Competition</em>,
               teams design and build three robots for a dynamic, paintball-like
               game. A new game each season sends every team back to the drawing
               board.

@@ -55,7 +55,7 @@ export default function Home() {
         <Image
           className="h-full w-full object-cover object-[center_54%] brightness-75 saturate-[1.2] max-[820px]:object-[center_60%]"
           src={robots1}
-          alt="Queen's Knights robot in a RoboMaster arena"
+          alt="Queen's Knights robot in a ARCC arena"
           sizes="100vw"
           priority
         />
@@ -109,7 +109,7 @@ export default function Home() {
           <Image
             className="h-[clamp(420px,43vw,520px)] w-full object-cover max-[820px]:mt-1.5 max-[820px]:h-auto max-[820px]:max-h-120"
             src={competition1}
-            alt="QKRT members watching a RoboMaster match"
+            alt="QKRT members watching a ARCC match"
             sizes="(max-width: 900px) 100vw, 50vw"
           />
         </div>

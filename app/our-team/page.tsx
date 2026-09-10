@@ -18,7 +18,7 @@ const visionItems = [
   {
     number: "02",
     title: "Competition Victory",
-    body: "To achieve victory in the prestigious North American RoboMaster competition and showcase top-tier innovation on a global stage.",
+    body: "To achieve victory in the prestigious ARC Competition and showcase top-tier innovation on a global stage.",
   },
   {
     number: "03",

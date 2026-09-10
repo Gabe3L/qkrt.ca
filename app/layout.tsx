@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     template: "%s | Queen's Knights Robotics",
   },
   description:
-    "Queen's Knights Robotics empowers students to design, fabricate, and program advanced RoboMaster robots.",
+    "Queen's Knights Robotics empowers students to design, fabricate, and program ARCC robots.",
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
