@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import { ArrowUpRightIcon } from "../components/LinkIcons";
 import hero1 from "@/app/assets/robots/hero1.webp";
 import hero2 from "@/app/assets/robots/hero2.webp";
 import infantry1 from "@/app/assets/robots/infantry1.webp";
@@ -95,12 +96,7 @@ export default function RobotsPage() {
               rel="noreferrer"
             >
               <span>2026 Game Manual</span>
-              <span
-                className="font-body text-xl leading-none"
-                aria-hidden="true"
-              >
-                ↗
-              </span>
+              <ArrowUpRightIcon className="size-5 shrink-0" />
             </a>
           </div>
 

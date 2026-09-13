@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ArrowUpRightIcon } from "../components/LinkIcons";
 import { focusRing, heading, siteContainer } from "../tailwind";
 
 export const metadata: Metadata = {
@@ -41,11 +42,9 @@ export default function ContactPage() {
             <strong className="relative z-10 text-[clamp(21px,3vw,34px)] wrap-anywhere">
               contact@qkrt.ca
             </strong>
-            <span className="relative z-10 font-brand text-xs tracking-[.12em] uppercase">
-              Open your email app{" "}
-              <b className="ml-2 text-lg" aria-hidden="true">
-                ↗
-              </b>
+            <span className="relative z-10 flex items-center gap-2 font-brand text-xs tracking-[.12em] uppercase">
+              Open your email app
+              <ArrowUpRightIcon className="size-4 shrink-0" />
             </span>
           </a>
         </div>

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import { ArrowRightIcon } from "../components/LinkIcons";
 import competition1 from "@/app/assets/competition/competition1.webp";
 import isowater from "@/app/assets/sponsors/isowater.webp";
 import mgChemicals from "@/app/assets/sponsors/mg_chemicals.webp";
@@ -228,8 +229,9 @@ export default function SponsorshipPage() {
             <strong className="text-[clamp(20px,3vw,30px)] wrap-anywhere">
               sponsorship@qkrt.ca
             </strong>
-            <b className="font-brand text-xs font-normal tracking-[.08em] uppercase">
-              Start a conversation →
+            <b className="flex items-center gap-2 font-brand text-xs font-normal tracking-[.08em] uppercase">
+              Start a conversation
+              <ArrowRightIcon className="size-4 shrink-0" />
             </b>
           </a>
         </div>

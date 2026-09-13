@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { focusRing, siteContainer } from "../tailwind";
+import { ArrowUpRightIcon } from "./LinkIcons";
 
 const footerNavigation = [
   { label: "Home", href: "/" },
@@ -13,6 +14,7 @@ const footerNavigation = [
 
 export function Footer() {
   const footerLinkClass = `${focusRing} transition-colors duration-150 hover:text-qk-red motion-reduce:transition-none`;
+  const socialLinkClass = `${footerLinkClass} inline-flex items-center gap-1.5`;
 
   return (
     <footer className="bg-qk-surface pt-10 pb-7">
@@ -32,36 +34,40 @@ export function Footer() {
         </div>
         <div className="flex flex-col items-end gap-1 text-sm text-qk-muted max-[560px]:items-start" aria-label="Social media">
           <a
-            className={footerLinkClass}
+            className={socialLinkClass}
             href="https://www.facebook.com/queensrobomaster/"
             target="_blank"
             rel="noreferrer"
           >
-            Facebook ↗
+            Facebook
+            <ArrowUpRightIcon className="size-3.5 shrink-0" />
           </a>
           <a
-            className={footerLinkClass}
+            className={socialLinkClass}
             href="https://www.instagram.com/qkrt_robotics/"
             target="_blank"
             rel="noreferrer"
           >
-            Instagram ↗
+            Instagram
+            <ArrowUpRightIcon className="size-3.5 shrink-0" />
           </a>
           <a
-            className={footerLinkClass}
+            className={socialLinkClass}
             href="https://www.linkedin.com/company/qkrt/"
             target="_blank"
             rel="noreferrer"
           >
-            LinkedIn ↗
+            LinkedIn
+            <ArrowUpRightIcon className="size-3.5 shrink-0" />
           </a>
           <a
-            className={footerLinkClass}
+            className={socialLinkClass}
             href="https://github.com/qkrt-rm"
             target="_blank"
             rel="noreferrer"
           >
-            GitHub ↗
+            GitHub
+            <ArrowUpRightIcon className="size-3.5 shrink-0" />
           </a>
         </div>
       </div>
