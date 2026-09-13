@@ -45,7 +45,7 @@ export function HiringPopup() {
 
   return (
     <aside
-      className="fixed right-6 bottom-6 z-60 w-[min(390px,calc(100vw-3rem))] overflow-hidden border border-qk-red/70 bg-qk-surface shadow-[0_18px_60px_rgb(0_0_0/65%)] max-[560px]:right-5 max-[560px]:bottom-5 max-[560px]:w-[calc(100vw-2.5rem)]"
+      className="fixed right-6 bottom-6 z-60 w-[min(390px,calc(100vw-3rem))] overflow-hidden border border-qk-red/70 bg-qk-surface shadow-[0_18px_60px_rgb(0_0_0/65%)] max-[560px]:right-4 max-[560px]:bottom-[max(1rem,env(safe-area-inset-bottom))] max-[560px]:left-4 max-[560px]:max-h-[calc(100dvh-2rem)] max-[560px]:w-auto max-[560px]:overflow-y-auto"
       role="dialog"
       aria-labelledby="hiring-popup-title"
       aria-describedby="hiring-popup-description"
