@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
+import { HiringPopup } from "./components/HiringPopup";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -51,6 +52,7 @@ export default function RootLayout({
       <body className="min-w-80 overflow-x-clip bg-qk-base font-body text-base leading-[1.65] text-white [text-rendering:optimizeLegibility] selection:bg-qk-red selection:text-white">
         <Header />
         {children}
+        <HiringPopup />
         <Footer />
       </body>
     </html>
