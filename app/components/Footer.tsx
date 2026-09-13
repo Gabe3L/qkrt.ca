@@ -32,68 +32,82 @@ export function Footer() {
             </p>
           </div>
         </div>
-        <div className="flex min-w-0 flex-1 flex-col items-end gap-3.5 max-[560px]:w-full max-[560px]:items-end">
-          <nav
-            className="flex flex-wrap justify-end gap-x-5 gap-y-1.5 text-xs text-qk-muted max-[820px]:hidden"
-            aria-label="Footer navigation"
+        <div
+          className="flex min-w-0 flex-1 flex-wrap items-center justify-end gap-x-5 gap-y-1.5 text-sm text-qk-muted max-[560px]:w-full max-[560px]:gap-x-3"
+          aria-label="Social media"
+        >
+          <a
+            className={socialLinkClass}
+            href="https://www.facebook.com/queensrobomaster/"
+            target="_blank"
+            rel="noreferrer"
           >
+            Facebook
+            <ArrowUpRightIcon className="size-3.5 shrink-0" />
+          </a>
+          <a
+            className={socialLinkClass}
+            href="https://www.instagram.com/qkrt_robotics/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Instagram
+            <ArrowUpRightIcon className="size-3.5 shrink-0" />
+          </a>
+          <a
+            className={socialLinkClass}
+            href="https://www.linkedin.com/company/qkrt/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            LinkedIn
+            <ArrowUpRightIcon className="size-3.5 shrink-0" />
+          </a>
+          <a
+            className={socialLinkClass}
+            href="https://github.com/qkrt-rm"
+            target="_blank"
+            rel="noreferrer"
+          >
+            GitHub
+            <ArrowUpRightIcon className="size-3.5 shrink-0" />
+          </a>
+        </div>
+      </div>
+      <div className={`${siteContainer} mt-6 flex items-start justify-between gap-9 border-t border-qk-border pt-6 max-[820px]:block`}>
+        <div className="shrink-0 text-left max-[820px]:text-center">
+          <p className="m-0 text-xs text-qk-muted">
+            © 2026 Queen&apos;s Knights Robotics
+          </p>
+          <p className="mt-1.5 mb-0 text-xs text-qk-muted">
+            Website by{" "}
+            <a
+              className={footerLinkClass}
+              href="https://www.gabelynch.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Gabe Lynch
+            </a>
+          </p>
+        </div>
+
+        <nav
+          className="flex flex-col items-end gap-1.5 text-xs text-qk-muted max-[820px]:hidden"
+          aria-label="Footer navigation"
+        >
+          <div className="flex flex-wrap justify-end gap-x-5 gap-y-1.5">
             {footerNavigation.map((item) => (
               <Link className={footerLinkClass} href={item.href} key={item.href}>
                 {item.label}
               </Link>
             ))}
+          </div>
+          <div className="flex gap-x-5">
             <Link className={footerLinkClass} href="/privacy">Privacy Policy</Link>
             <Link className={footerLinkClass} href="/terms">Terms of Service</Link>
-          </nav>
-
-          <div
-            className="flex flex-wrap items-center justify-end gap-x-5 gap-y-1.5 text-sm text-qk-muted max-[560px]:gap-x-3"
-            aria-label="Social media"
-          >
-            <a
-              className={socialLinkClass}
-              href="https://www.facebook.com/queensrobomaster/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Facebook
-              <ArrowUpRightIcon className="size-3.5 shrink-0" />
-            </a>
-            <a
-              className={socialLinkClass}
-              href="https://www.instagram.com/qkrt_robotics/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Instagram
-              <ArrowUpRightIcon className="size-3.5 shrink-0" />
-            </a>
-            <a
-              className={socialLinkClass}
-              href="https://www.linkedin.com/company/qkrt/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              LinkedIn
-              <ArrowUpRightIcon className="size-3.5 shrink-0" />
-            </a>
-            <a
-              className={socialLinkClass}
-              href="https://github.com/qkrt-rm"
-              target="_blank"
-              rel="noreferrer"
-            >
-              GitHub
-              <ArrowUpRightIcon className="size-3.5 shrink-0" />
-            </a>
           </div>
-        </div>
-      </div>
-      <div className={`${siteContainer} mt-6 border-t border-qk-border pt-6 text-center`}>
-        <p className="m-0 text-xs text-qk-muted">
-          © 2026 Queen&apos;s Knights Robotics
-        </p>
-        <p className="mt-1.5 mb-0 text-xs text-qk-muted">Website by Gabe Lynch</p>
+        </nav>
       </div>
     </footer>
   );
