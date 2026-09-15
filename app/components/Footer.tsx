@@ -17,7 +17,7 @@ export function Footer() {
   const socialLinkClass = `${footerLinkClass} inline-flex items-center gap-1.5`;
 
   return (
-    <footer className="bg-qk-surface pt-10 pb-7">
+    <footer className="mt-16 bg-qk-surface pt-10 pb-7 max-[560px]:mt-12">
       <div className={`${siteContainer} flex items-end justify-between gap-7.5 max-[820px]:items-start max-[560px]:flex-col`}>
         <div className="flex items-center gap-6 max-[560px]:gap-4">
           <Image className="h-18.5 w-18.5" src="/favicon.svg" alt="" width={100} height={100} />
